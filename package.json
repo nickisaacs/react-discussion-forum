@@ -1,0 +1,22 @@
+{
+  "name": "react-discussion-forum",
+  "version": "1.0.0",
+  "description": "I'm building a discussion forum with React as the front end. It's still WIP (hello world to be exact). Hoping to spend some time on this.  I'm considering GraphQL, MongoDB, Next.js and Docker",
+  "main": "index.js",
+  "scripts": {
+    "dev:install": "./scripts/00-install-dev.sh",
+    "dev:up": "docker-compose -f docker/docker-compose.dev.yml up",
+    "dev:down": "docker-compose -f docker/docker-compose.dev.yml down",
+    "dev:uninstall": "docker-compose -f docker/docker-compose.dev.yml down --rmi all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickisaacs/react-discussion-forum.git"
+  },
+  "author": "Nick Isaacs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickisaacs/react-discussion-forum/issues"
+  },
+  "homepage": "https://github.com/nickisaacs/react-discussion-forum#readme"
+}

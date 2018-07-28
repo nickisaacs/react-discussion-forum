@@ -4,7 +4,7 @@
   "description": "A discussion forum built in React",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "webpack-dev-server --mode development --hot",
     "build": "webpack --mode production"
   },
   "author": "Nick Isaacs",
