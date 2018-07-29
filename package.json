@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/nickisaacs/react-discussion-forum.git"
   },
-  "author": "Nick Isaacs",
+  "author": "Nick Isaacs <nickisaacs@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nickisaacs/react-discussion-forum/issues"
