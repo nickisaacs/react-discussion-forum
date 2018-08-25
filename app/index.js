@@ -4,8 +4,8 @@ const express = require('express'),
     path = require('path');
 
 var webpack = require('webpack');
-
-
+var  { createRenderer } = require('fela')
+var { renderToMarkup } = require('fela-dom')
 
 // enable hot reload for dev
 if (process.env.NODE_ENV === 'development') {
@@ -20,7 +20,6 @@ if (process.env.NODE_ENV === 'development') {
 
     app.use(require("webpack-hot-middleware")(compiler));
 } else {
-
     // Serving static files
     app.use('/dist', express.static(path.join(__dirname, 'dist')));
 }
@@ -34,8 +33,9 @@ const ssr = require('./views/server');
 
 // server rendered home page
 app.get('/', (req, res) => {
-    const { content } = ssr()
-    const response = template("Server Rendered Page", content)
-    res.setHeader('Cache-Control', 'assets, max-age=604800')
+    const renderer = createRenderer()
+    const { content } = ssr(renderer)
+    const styleMarkup = renderToMarkup(renderer)
+    const response = template("Server Rendered Page", content, styleMarkup)
     res.send(response);
 });

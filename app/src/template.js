@@ -1,4 +1,4 @@
-function template(title, content) {
+function template(title, content, styleMarkup) {
     const script = `<script src="dist/bundle.js"></script>`
     
     let page = `<!DOCTYPE html>
@@ -6,6 +6,7 @@ function template(title, content) {
     <head>
       <meta charset="utf-8">
       <title> ${title} </title>
+      ${styleMarkup}
     </head>
     <body>
       <div id="app">${content}</div>

@@ -1,12 +1,13 @@
-import React from 'react';
 import { hot } from 'react-hot-loader'
+import React from 'react';
 
 import Button from '../design/Button';
+
 
 const App = () => {
     return (
         <div>
-            <Button type="primary">Welcome</Button>
+            <Button type="primary">Welcomess</Button>
         </div>
     );
 };

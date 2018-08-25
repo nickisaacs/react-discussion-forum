@@ -1,10 +1,7 @@
-import React from 'react';
+import { createComponent } from 'react-fela'
+
 import { button } from './styles';
 
-const Button = () =>
-    <div>
-        This is a button
-    </div>
-
+const Button = createComponent(button);
 
 export default Button;
