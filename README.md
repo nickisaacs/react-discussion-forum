@@ -18,7 +18,7 @@ I'm considering GraphQL, MongoDB, Next.js and Docker for the rest of the applica
  - Docker
  - Docker Compose
 
-## Run(dev mode only for now)
+## Run(development with hot reload)
 
     yarn dev:install
     yarn dev:up
@@ -26,4 +26,8 @@ I'm considering GraphQL, MongoDB, Next.js and Docker for the rest of the applica
 
   
 
-Will add production mode for docker soon..
+## Run(Production)
+
+    yarn prod:install
+    yarn prod:up
+    visit http://localhost on your browser
