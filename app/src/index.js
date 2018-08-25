@@ -1,13 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { createRenderer } from 'fela';
-import { Provider } from 'react-fela'
+import { hydrate } from 'react-dom'
 import App from './components/App'
 
-const renderer = createRenderer()
-
-ReactDOM.render(
-    <Provider renderer={renderer}>
-        <App />
-    </Provider>,
-    document.getElementById("index"));
+hydrate(
+    <App />,
+    document.getElementById("app"));

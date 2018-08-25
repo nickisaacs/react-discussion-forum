@@ -7,7 +7,11 @@
     "dev:install": "./scripts/00-install-dev.sh",
     "dev:up": "docker-compose -f docker/docker-compose.dev.yml up",
     "dev:down": "docker-compose -f docker/docker-compose.dev.yml down",
-    "dev:uninstall": "docker-compose -f docker/docker-compose.dev.yml down --rmi all"
+    "dev:uninstall": "docker-compose -f docker/docker-compose.dev.yml down --rmi all",
+    "prod:install": "./scripts/00-install-prod.sh",
+    "prod:up": "docker-compose -f docker/docker-compose.prod.yml up",
+    "prod:down": "docker-compose -f docker/docker-compose.prod.yml down",
+    "prod:uninstall": "docker-compose -f docker/docker-compose.prod.yml down --rmi all"
   },
   "repository": {
     "type": "git",

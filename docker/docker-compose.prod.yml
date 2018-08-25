@@ -4,7 +4,7 @@ services:
     build:
       context: ../.
       dockerfile: docker/server/dockerfile
-    image: myapp-server-dev
+    image: myapp-server-prod
     deploy:
       resources:
         limits:
@@ -20,9 +20,7 @@ services:
   app:
     build:
       context: ../.
-      dockerfile: docker/client/dev.dockerfile
-    image: react-docker-dev
+      dockerfile: docker/client/prod.dockerfile
+    image: react-docker-prod
     environment:
-      - NODE_ENV=development
-    volumes: # For webpack dev server to use our local files
-      - ./../app:/usr/src/app
+      - NODE_ENV=production
