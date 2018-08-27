@@ -1,6 +1,7 @@
 FROM node:8.11.3-alpine
 
 COPY ./app/package.json ./app/package.json
+COPY ./app/yarn.lock ./app/yarn.lock
 RUN cd app && yarn install
 
 COPY . .
