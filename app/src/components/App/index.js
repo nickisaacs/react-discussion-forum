@@ -7,7 +7,7 @@ import Button from '../design/Button';
 const App = () => {
     return (
         <div>
-            <Button type="primary">Welcomess</Button>
+            <Button type="primary">Welcome!!</Button>
         </div>
     );
 };

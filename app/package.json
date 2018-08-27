@@ -4,7 +4,7 @@
   "description": "A discussion forum built in React",
   "main": "src/index.js",
   "scripts": {
-    "clean": "rm -rf dist views",
+    "clean": "./clean.sh",
     "build:dev": "babel src -d views --watch",
     "start:dev": "NODE_ENV=development node index.js",
     "develop": "yarn clean && parallelshell 'yarn run build:dev' 'yarn run start:dev'",
@@ -30,11 +30,13 @@
     "webpack-hot-middleware": "^2.22.3"
   },
   "dependencies": {
+    "chokidar": "^2.0.4",
     "express": "^4.16.3",
     "fela": "^6.1.9",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-fela": "^7.3.1",
-    "react-hot-loader": "^4.3.4"
+    "react-hot-loader": "^4.3.4",
+    "rimraf": "^2.6.2"
   }
 }
