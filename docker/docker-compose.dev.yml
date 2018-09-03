@@ -25,4 +25,5 @@ services:
     environment:
       - NODE_ENV=development
     volumes: # For webpack dev server to use our local files
+      - '/usr/src/app/node_modules'
       - ./../app:/usr/src/app

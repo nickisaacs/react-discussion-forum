@@ -7,7 +7,7 @@
     "clean": "./clean.sh",
     "build:dev": "babel src -d views --watch",
     "start:dev": "NODE_ENV=development node index.js",
-    "develop": "yarn clean && parallelshell 'yarn run build:dev' 'yarn run start:dev'",
+    "develop": "yarn clean && yarn babel && parallelshell 'yarn run build:dev' 'yarn run start:dev'",
     "start": "node index.js",
     "pack": "webpack --mode production --config webpack.config.js",
     "babel": "babel src -d views",
