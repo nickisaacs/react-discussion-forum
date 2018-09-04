@@ -7,7 +7,7 @@ I'm building a discussion forum with React as the front end. It's still WIP (hel
 
 Hoping to spend some time on this.
 
-I'm considering GraphQL, MongoDB, Next.js and Docker for the rest of the application
+I'm considering GraphQL, MongoDB and Docker for the rest of the application
 
   
 
